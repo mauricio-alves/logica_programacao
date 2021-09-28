@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lógica de Programação JavaScript</title>
+  </head>
+  <body>
+    <h1>Lógica de Programação com JavaScript</h1>
+  </body>
+
+  <script>
+    var dias = new Array("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado");
+
+    var hoje = new Date();
+    var diaSemana = hoje.getDay(); // retorna o dia da semana
+
+    /*  0 - domingo
+        1 - segunda
+        ...
+        6 - sábado */
+    alert("Bem vindo! Hoje é: " + dias[diaSemana]);
+  </script>
+</html>

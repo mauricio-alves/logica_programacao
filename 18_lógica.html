@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lógica de Programação JavaScript</title>
+  </head>
+  <body>
+    <h1>Lógica de Programação com JavaScript</h1>
+
+    <div id="output"></div>
+
+    <script>
+      var output = document.querySelector("#output");
+      // querySelector acessa tags no mundo html
+
+      var mensagem = "";
+      for(var i = 0; i < 1001; i++) {
+        mensagem = mensagem + " i: " + i + "<br>";
+        // mensagem += é a msm coisa q mensagem = mensagem +
+      }
+
+      output.innerHTML = mensagem;
+    </script>
+  </body>
+</html>

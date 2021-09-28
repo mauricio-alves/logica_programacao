@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lógica de Programação JavaScript</title>
+  </head>
+  <body>
+    <h1>Lógica de Programação com JavaScript</h1>
+
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+    <div id="output"></div>
+
+    <script>
+      function mostrarTabuada() {
+        // perguntar e converter o número digitado
+        var n = parseFloat(prompt("Digite um número: "));
+
+        // criar uma variavel que servirá de indice
+        var i = 1;
+        var mensagem = "";
+
+        // enquanto i <= 1000, concatenar na variavel mensagem
+        for(i = 1; i <= 1000; i++) {
+          mensagem = mensagem + n + " x " + i + " = " + (n * i) + "<br>";
+        }
+
+        // mostrar mensagem no output
+        output.innerHTML = mensagem;
+      }
+
+      function limparTabuada() {
+        mensagem = "";
+        output.innerHTML = mensagem;
+      }
+    </script>
+  </body>
+</html>

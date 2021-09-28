@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lógica de Programação JavaScript</title>
+  </head>
+  <body>
+    <h1>Lógica de Programação com JavaScript</h1>
+    <div id="output"></div>
+  </body>
+
+  <script>
+    var produtos = [{ "nome": "mauricio", "email": "maualves_@hotmail.com" }, { "nome": "danilo", "email": "danalves_@hotmail.com" }, {"nome": "claudio", "email": "claudio@hotmail.com"}];
+
+    /*
+    produto1 = [{"nome": "mauricio", "email": "maualves_@hotmail.com"}];
+    produto2 = [{"nome": "danilo", "email": "danalves_@hotmail.com"}];
+    produto3 = [{"nome": "claudio", "email": "claudio@hotmail.com"}]; */
+
+    var msg = "";
+
+    for(var i = 0; i < produtos.length; i++) {
+      console.log(produtos[i]);
+      msg += "<b>Nome: </b>" + produtos[i].nome + ". "; 
+      msg += "<b>Email: </b>" + produtos[i].email + ".<br>";
+    }
+
+    document.querySelector("#output").innerHTML = msg;
+  </script>
+</html>

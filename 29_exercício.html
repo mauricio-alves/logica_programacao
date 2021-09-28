@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lógica de Programação JavaScript</title>
+  </head>
+  <body>
+    <h1>Lógica de Programação com JavaScript</h1>
+  </body>
+
+  <script>
+    var numeros = new Array(25, 30, 45, 28, 0, 12, 78, 64);
+    // mostrar na tela a soma dos números pares da array acima
+
+    var somaDosPares = somaOsPares(numeros);
+    alert("A soma dos números pares é: " + somaDosPares);
+
+    function somaOsPares(numeros) {
+      var soma = 0;
+      for(var i = 0; i < numeros.length; i++) {
+        console.log(i);
+        console.log(numeros[i]);
+
+        if(!isNaN(numeros[i]) && numeros[i] % 2 === 0) {
+          soma += numeros[i];
+        }
+      }
+      return soma;      
+    }
+  </script>
+</html>

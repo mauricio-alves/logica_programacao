@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lógica de Programação JavaScript</title>
+  </head>
+  <body>
+    <h1>Lógica de Programação com JavaScript</h1>
+
+    <script>
+      var ano = 1004;
+      // ano = ano + 4 é o mesmo que ano += 4
+      for(var ano = 1004; ano <=2017; ano = ano + 4) {
+        if((ano % 100 != 0) || (ano % 400 === 0)) {
+        document.write(" ano " + ano + "<br>");
+      } else {
+        document.write(" ano " + ano + " não é bissexto! <br>");
+        }
+      }
+    </script>
+  </body>
+</html>
